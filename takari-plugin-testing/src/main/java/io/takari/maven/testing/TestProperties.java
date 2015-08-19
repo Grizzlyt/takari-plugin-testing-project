@@ -48,6 +48,13 @@ public class TestProperties {
     }
   }
 
+/**
+ * Copyright (c) 2014 Takari, Inc.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ */
   protected Map<String, String> loadProperties() throws IOException {
     Properties p = new Properties();
     try (InputStream os = getClass().getClassLoader().getResourceAsStream("test.properties")) {
@@ -110,6 +117,13 @@ public class TestProperties {
     return dependencies;
   }
 
+/**
+ * Copyright (c) 2014 Takari, Inc.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ */
   public List<String> getRepositories() {
     TreeMap<String, String> repositories = new TreeMap<>();
     for (Map.Entry<String, String> property : properties.entrySet()) {
